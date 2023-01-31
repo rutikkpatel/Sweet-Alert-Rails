@@ -2,6 +2,8 @@
   <div class="flex-column">
     <div class="d-flex justify-content-between align-items-center mt-5">
       <h1> Books </h1>
+      <button class= "btn btn-info text-light border-0 rounded shadow" onclick= "defaultAlertBtn()"> Default Alert </button>
+      <button class= "btn btn-info text-light border-0 rounded shadow" onclick= "sweetAlertBtn()"> Sweet Alert </button>
       <%= button_to "Add New Book", new_book_path, method: :get ,class:"btn-warning border-0 rounded shadow p-3 m-3" %>
     </div>
     <!--Error Message-->
@@ -39,3 +41,14 @@
     </div>
   </div>
 </div>
+<script>
+  function defaultAlertBtn() {
+    alert("Button has been clicked")
+  }
+  function sweetAlertBtn() {
+    Swal.fire({
+      icon: 'success',
+      title: 'Button has been clicked',
+    })
+  }
+</script>
