@@ -22,7 +22,7 @@
       </div>
       <div class="d-flex">
         <%= button_to "Edit Book" , edit_book_path, method: :get ,class:"btn-success border-0 rounded-pill shadow p-2 m-2" %>
-        <%= button_to "Delete Book", book_path, method: :delete ,class:"btn-danger border-0 rounded-pill shadow p-2 m-2" %>
+        <%= button_to "Delete Book", book_path, method: :delete, form_class: "delete-alertbox" ,class:"btn-danger border-0 rounded-pill shadow p-2 m-2" %>
         <%= button_to "View all Book", books_path,method: :get ,class:"btn-primary border-0 rounded-pill shadow p-2 m-2" %>
       </div>
     </div>
